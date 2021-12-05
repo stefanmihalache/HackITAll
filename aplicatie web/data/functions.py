@@ -39,7 +39,7 @@ def make_plot(id, company):
 
 def make_list():
 
-    f = open(r"data/global500.txt", "r")
+    f = open(r"data/global500.txt", "r", errors='ignore')
     symbols = []
     companies = []
     for line in f:
