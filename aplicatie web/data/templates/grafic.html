@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>{{ value }}</title>
+
+    <style>
+
+    body {
+
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0;
+        font-family: "Roboto Slab", serif;
+
+    }
+
+    header {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            background-color: #0b7dda;
+
+        }
+
+    header h1 {
+            color: white;
+            padding-bottom: 10px;
+            font-size: 50px;
+        }
+
+    main {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            
+        }
+    footer {
+            background-color: #0b7dda;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+    footer p {
+            margin: 0;
+        }
+
+    iframe {
+        max-width: 1600px;
+        border: none;
+
+    }
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+
+        <h1>{{ value }}</h1>
+
+
+    </header>
+
+    <main>
+        <p>În funcție de datele din ultimii ani, probabil prețul va ajunge la </p>
+
+        <!--Graficul-->
+
+        <iframe src="/data/template/{{value}}.html" height="1000" width="100%"></iframe>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; Last but not Least</p>
+
+
+    </footer>
+
+</body>
+</html>
